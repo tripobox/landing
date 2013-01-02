@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Tripobox">
+<meta name="description" content="Group trips made easy. Get group deals on hotels, restaurants and activities">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripobox - Simplify the planning of your group trips</title>
+<!-- Enabling HTML5 tags for older IE browsers -->
+<!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".dropdown dt a").click(function() {
+			$(".dropdown dd ul").slideToggle('fast');
+			return false;
+		});
+					
+		$(".dropdown dd ul li a").click(function() {
+			var text = $(this).html();
+			$(".dropdown dt a span").html(text);
+			$(".dropdown dd ul").hide();
+			return false;
+		});
+
+		$(document).bind('click', function(e) {
+			var $clicked = $(e.target);
+			if (! $clicked.parents().hasClass("dropdown"))
+				$(".dropdown dd ul").hide();
+		});
+		
+	});
+</script>
+</head>
+
+<body id="index">
+	<!-- #mainHeader -->
+    <header id="mainHeader" class="clearfix">
+    	<div class="container headerContainer">
+            <div id="logo">
+            	<a href="/"><img src="img/tripobox-logo.png" width="172" height="54" alt="Tripobox" title="Tripobox - Group trips made easy"></a>
+            </div>
+            <nav id="topNav" class="fright">
+            	<ul id="mainNav">
+                	<li>
+                    	<span><a href="/">Hi Jasper</a><span></span></span>
+                        <ul>
+                        	<li><a href="/">Account</a></li>
+                            <li><a href="/">Bookings</a></li>
+                            <li><a href="/">Logout</a></li>
+                        </ul>
+                    </li>
+                	<li><a href="/"><span></span>My trips</a></li>
+                    <li>
+                    	<span><a href="/">Support</a><span></span></span>
+                        <ul>
+                        	<li><a href="/">How it works</a></li>
+                            <li><a href="/">Contact us</a></li>
+                            <li><a href="/">Terms of Use</a></li>
+                            <li><a href="/">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+               	</ul>
+                <dl class="dropdown">
+                    <dt><a href="#"><span>&euro; EUR</span></a></dt>
+                    <dd>
+                        <ul>
+                            <li><a href="#">&euro; EUR</a></li>
+                            <li><a href="#">$ USD</a></li>
+                            <li><a href="#">&pound; GBP</a></li>
+                            <li><a href="#">&pound; GBP</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <a class="addOffer" href="/">Add your offering</a>
+            </nav>
+       	</div>
+    </header>
+    <!-- /#mainHeader -->
+    
+    <!-- #homeSlider -->
+    <section id="homeSlider" class="clearfix">
+    	<div class="container">
+        	<hgroup>
+            	<h1>Group trips made easy!</h1>
+                <h3>Tailore your group packages to Stay, Eat, Do and have Fun</h3>
+            </hgroup>
+            <aside id="searchEngine" class="fright">
+                <h2>Get inspired</h2>
+            </aside>
+       	</div>
+    </section>
+    <!-- /#homeSlider -->
+    
+    <!-- #mainContent -->
+    <div id="mainContent" class="container clearfix">
+    	<div class="padder">
+        
+        	<input type="submit" class="btn_main mid_btn blue_btn" value="Suscribe">
+            <input type="submit" class="btn_main mid_btn green_btn" value="Add offer">
+            <input type="submit" class="btn_main big_btn green_btn" value="Ask for availability">
+            <input type="submit" class="btn_main small_btn blue_btn" value="Create">
+            <input type="submit" class="btn_main small_btn blue_btn" value="Create" disabled>
+            
+            <button type="button" class="btn_main big_btn gray_btn" title="Add offer to my trips">
+                <span class="icon_add icon_add-trips"></span>
+                <span class="button-text">Add to my trips</span>
+            </button>            
+            <button type="button" class="btn_main big_btn gray_btn" title="I want to join to this offering">
+                <span class="icon_add icon_add-join"></span>
+                <span class="button-text">I want to join</span>
+            </button> 
+            <button type="button" class="btn_main big_btn gray_btn" title="I don't want this offering anymore">
+                <span class="icon_add icon_add-unjoin"></span>
+                <span class="button-text">I want to unjoin</span>
+            </button>
+            
+                      
+             <button type="button" class="btn_main fncn_btn" title="Edit item">
+                <span class="icon_fnc icon_edit"></span>
+                <span class="button-text">Edit</span>
+            </button>            
+             <button type="button" class="btn_main fncn_btn" title="Remove item">
+                <span class="icon_fnc icon_delete"></span>
+                <span class="button-text">Remove from Trip</span>
+            </button>
+            
+            
+            <button type="button" class="btn_main mid_btn blue_btn fellows-btn" title="Invite felowers">
+                <span class="icon_social icon_fellow"></span>
+                <span class="button-text">Invite fellowers</span>
+            </button>
+            <button type="button" class="btn_main mid_btn facebook-btn" title="Log in with facebook">
+                <span class="icon_social icon_facebook"></span>
+                <span class="button-text">Log in with facebook</span>
+            </button>
+            
+            
+    	</div>
+    </div>
+    <!-- /#mainContent -->
+    
+    <!-- #mainFooter-->
+    <footer id="mainFooter">
+    	<div class="container clearfix">
+            <address id="about" class="fleft sixCol">
+                <h4>What is Tripobox</h4>
+                <p>Tripobox is a marketplace for tourism and leisure offers to simplify the organization of group travel.</p>
+                <p>The application allows to search for group deals, to design individual programs, to communicate & exchange with group members and vendors, to request and book the service as well as to split payments between each participant.</p>
+            </address>
+            <!--#footerNav-->
+            <nav id="footerNav" class="fright nineCol">
+                <ul class="threecol-list">
+                    <li><h4>About Tripobox</h4>
+                        <ul>
+                            <li><a href="/">About us</a></li>
+                            <li><a href="/">The Team</a></li>
+                            <li><a href="/">Jobs</a></li>
+                        </ul>
+                    </li>
+                    <li><h4>Social</h4>
+                        <ul class="social-footer">
+                            <li><a href="http://www.facebook.com/Tripobox.fan" target="_blank">Facebook</a></li>
+                            <li><a href="http://twitter.com/tripobox" target="_blank">Twitter</a></li> 
+                            <li><a href="http://www.linkedin.com/in/tripobox" target="_blank">LinkedIn</a></li>
+                            <li><a href="http://blog.tripobox.com" target="_blank">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="last"><h4>Help & Support</h4>
+                        <ul>
+                            <li><a href="/">How it works</a></li>
+                            <li><a href="/">Contact us</a></li>
+                            <li><a href="/">Terms of Use</a></li>
+                            <li><a href="/">Privacy Policys</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--/#footerNav-->
+      	</div>
+        <div class="container clearfix">
+            <span id="copyright" class="smallText fleft sixCol">&copy; Tripobox</span>
+        </div>
+    </footer>
+    <!-- /#mainFooter-->
+
+</body>
+</html>

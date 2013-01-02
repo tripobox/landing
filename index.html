@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Tripobox">
+<meta name="description" content="Group trips made easy. Get group deals on hotels, restaurants and activities">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripobox - Simplify the planning of your group trips</title>
+<!-- Enabling HTML5 tags for older IE browsers -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  var resizeMainPhoto = function(){ 
+    var height = $(window).height();
+    $('#slider_section .container').css({height: "" + (height - 68) * 0.908 + "px" });
+  }
+  $(function(){  
+    resizeMainPhoto();
+    $(window).on('resize', resizeMainPhoto);
+  });
+</script>
+</head>
+
+<body id="index">
+  <!-- #mainHeader -->
+  <header id="mainHeader" class="clearfix">
+    <div class="container headerContainer">
+      <div id="logo">
+        <a href="/"><img src="img/tripobox-logo.png" width="172" height="54" alt="Tripobox" title="Tripobox - Group trips made easy"></a>
+      </div>
+    </div>
+  </header>
+  <!-- /#mainHeader -->
+    
+  <!-- #homeSlider -->
+  <section id="slider_section" class="clearfix">
+    <div id="homeSlider"></div>
+    <div class="container clearfix">
+      <div class="clearfix">
+        <hgroup class="fleft">
+          <h1>Group trips made easy!</h1>
+          <h3>Tailor your travel package with offerings to Stay, Eat, Do, invite fellow travelers, book and enjoy your group trip.</h3>
+        </hgroup>
+        <aside id="mailSubscribe_box" class="fright">
+          <div class="clearfix">
+            <h2>Stay tuned for the relaunch</h2>
+            <form action="http://tripobox.us1.list-manage.com/subscribe/post?u=9fe8f91ed0f585585bfa6c1a2&amp;id=51a2045e8e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+              <label for="email_address" class="clearfix biggText">Sign up for our newsletter</label>
+              <div class="clearfix">
+                <input id="email_address" type="email" name="EMAIL" placeholder="Your email address" class="required email">
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <input id="mc-embedded-subscribe" type="submit" class="btn_main mid_btn blue_btn" value="Subscribe" name="subscribe">
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <!-- /#homeSlider -->
+    
+  <a name="reazons_why" href="#reazons_why" class="down-tab smooth_scroll">
+    <span>
+      <span></span>
+    </span>
+  </a>
+    
+  <!-- #mainContent -->
+  <section id="reasons_why">
+    <div class="container clearfix">
+      <ul class="threecol-list">
+        <li>
+          <article>
+            <header>
+              <h2 class="fancytypo">
+                <span>1</span>
+                Get inspired
+              </h2>
+            </header>
+            <p class="biggText">Browse hotel, restaurant &amp; activity offerings in the most vibrant tourist cities and tailor your own travel package.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h2 class="fancytypo">
+                <span>2</span>
+                Be social
+              </h2>
+            </header>
+            <p class="biggText">Plan your trip with friends, families or colleagues, take group decisions and get in touch with the hosts.</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h2 class="fancytypo">
+                <span>3</span>
+                Have fun
+              </h2>
+            </header>
+            <p class="biggText">Book selected offerings for all fellow travelers, pay individually and enjoy your trip. And the best, it’s all hassle-free!</p>
+          </article>
+        </li>
+      </ul>
+      <figure class="main_bigg_img center clearfix">
+        <img src="img/tripobox_web_new_features.png" width="644" height="298" alt="Tripobox new social features" />
+      </figure>
+      <div class="home_spreader_full margin_auto"></div>
+      <footer>
+        <div class="padder clearfix">
+          <p class="center biggText">
+            Tripobox is a collaborative travel marketplace, simplifying the planning and reservation of group trips. 
+          </p>
+          <p class="center biggerText"><strong>A full debut with major social features is being launched in January 2013!</strong></h3>
+        </div>
+      </footer>
+    </div>
+    <aside class="grey_box home_arrow">
+      <div class="container clearfix center">
+        <a href="#mailSubscribe_box" class="btn_main big_btn green_btn smooth_scroll">
+          <span>Hey, give it a spin!</span>
+            <i class="icon big_top_arrow"></i>
+        </a>
+      </div>
+    </aside>
+  </section>
+  <!-- /#mainContent -->
+    
+  <!-- #mainFooter-->
+  <footer id="mainFooter">
+    <div class="container clearfix">
+      <span id="copyright" class="smallText fleft sixCol">&copy; Tripobox</span>
+    </div>
+  </footer>
+  <!-- /#mainFooter-->
+
+</body>
+</html>
