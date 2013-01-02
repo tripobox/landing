@@ -86,7 +86,7 @@ h1, #logo a, .fancytypo, .addOffer,
     font-weight:normal!important;
     }
 h1, #logo a, .fancytypo {color:#46b9d0; text-shadow: 0 1px 0 #fff;}
-h1, #logo a {font-size:2.3em;}
+h1, #logo {font-size:2.3em;}
 h2{font-size:1.32em;}
 h3{font-size:1.2em;}
 h2, h3, h4{color:#202020; font-weight: normal;}
@@ -109,7 +109,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 #mainContent{
     padding-bottom:20px;
     position:relative;
-    min-height: 550px;
+    min-height: 535px;
     }
 /*****************Cols********************/
 .threecol, .threecol-list > li{width:31.333%;}
@@ -149,8 +149,9 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
         #logo {
             position:absolute;
             top:6px;
-            left:1%;
-        }
+            left:50%;
+            margin-left: -86px;
+          }
             #logo a:hover{opacity:.88;}
 
 /*******************************************************
@@ -259,7 +260,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   }
 
   #slider_section .container {
-    min-height: 550px;
+    min-height: 515px;
     position: relative;
   }
     #slider_section .container > .clearfix {
@@ -392,7 +393,6 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 .home_arrow .green_btn {
   display: inline-block;
   margin: 2.6% auto;
-  max-width: 354px;
   padding: 4px 62px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -427,7 +427,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     .home_arrow:before {
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
-      border-top: 20px solid #CCCCCC;
+      border-top: 20px solid #ddd;
       content: "";
       left: 50%;
       margin-left: -20px;
@@ -436,8 +436,9 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
       z-index: 1;
       }
 .grey_box {
-    background-color: #EAEFF1 !important;
-    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1) inset, 0 -1px 1px #DDDDDD;
+    background: url(../img/gray_bg.jpg) repeat #EAEFF1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset, 0 -2px 1px #fff;
+    border-top: 1px solid #ddd;
     overflow: hidden;
     padding: 3% 0;
 }
@@ -459,21 +460,87 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 /***********************************************
 **************Media queries*********************/
 
-@media screen and (max-width: 1000px) {
-  #homeSlider{min-width: inherit;}
+@media screen and (max-width: 1024px) {
+  #slider_section .container {
+    min-height:inherit;
+    max-height: 530px;
+  }
+   #slider_section .container > .clearfix{
+    width: 96%;
+    padding: 0 2%;
+  }
+  #homeSlider{min-width: 980px; background-size: 100%!important;}
   #slider_section h1, #slider_section h3{font-size: 2.8em;}
   #slider_section hgroup h3, .biggText{font-size: 1em;}
-  #slider_section .container > .clearfix{bottom: 13%;}
   #mailSubscribe_box > .clearfix{padding: 2.5%;}
   #slider_section hgroup{margin: 0;}
 }
 
-@media screen and (max-width: 960px) {
-  #homeSlider{min-width: inherit;}
-  #slider_section h1, #slider_section h3{font-size: 2.8em;}
-  #slider_section hgroup h3, .biggText{font-size: 1em;}
-  #slider_section .container > .clearfix{bottom: 13%;}
-  #mailSubscribe_box > .clearfix{padding: 2.5%;}
-  #slider_section hgroup{margin: 0;}
+@media screen and (max-width: 1000px) {
+  #mailSubscribe_box input[type="email"],
+  #mailSubscribe_box input[type="text"]{width: 62%;}
+  #reasons_why ul{margin: 5.5% 2%;}
 }
+
+@media screen and (max-width: 940px) {
+  #slider_section .container > .clearfix{bottom: 8%;}
+    #mailSubscribe_box.fright{overflow: hidden;}
+  #slider_section h1, #slider_section h3{font-size: 2.4em; line-height: 1.22em;}
+  #mailSubscribe_box input[type="email"],
+  #mailSubscribe_box input[type="text"]{
+    width: 56%;
+    margin-right: 1%;
+  }
+  .mid_btn{width: 36%!important;}
+  .main_bigg_img img{max-width: 100%; height: auto;}
+  body, #slider_section hgroup h3, .biggText{font-size: 0.96em;}
+  #reasons_why h2{font-size: 2.2em;}
+  .home_spreader_full{
+    width: 98%;
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #slider_section hgroup.fleft, #mailSubscribe_box.fright{
+    float: none;
+    margin: 2% auto;
+    width: 80%;    
+  }
+  #mailSubscribe_box label{margin-bottom: 10px;}
+  #mailSubscribe_box input[type="email"],
+  #mailSubscribe_box input[type="text"]{
+    padding: 2%;
+    width: 96%;
+    height: 20px;
+  }
+
+  .mid_btn {
+    display: block;
+    float: none;
+    width: 100%!important;
+    margin-top: 10px;
+  }
+
+  .threecol, .threecol-list > li,
+  .fourcol, .fourcol-list > li {
+    float: none;
+    width: auto;
+    margin: 4%;
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+  body,  #slider_section hgroup h3, .biggText{font-size: 1em;}
+  .main_bigg_img, #slider_section hgroup.fleft,
+  #mailSubscribe_box.fright{width: 96%;}
+  .padder{padding: 2% 5%;}
+
+  .home_arrow .green_btn{padding: 4px 5%; }
+  
+}
+
+
+
 
