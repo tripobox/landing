@@ -40,12 +40,10 @@
     $("#mc-embedded-subscribe-form").submit(function(){
       var email = $("#email_address").val()
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      if (re.test(email)) {
-        $.post(this.action, $(this).serialize).success()
-      } else {
-        alert('error en el email')
+      if (!re.test(email)) {
+        alert('The email is no valid. Please, enter a valid email');
+        return false;
       }
-      return false;
     });
   });
 </script>
@@ -74,7 +72,7 @@
         <aside id="mailSubscribe_box" class="fright">
           <div class="clearfix">
             <h2>Stay tuned for the relaunch</h2>
-            <form action="http://tripobox.us1.list-manage.com/subscribe/post?u=9fe8f91ed0f585585bfa6c1a2&amp;id=51a2045e8e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+            <form action="http://tripobox.us1.list-manage.com/subscribe/post?u=9fe8f91ed0f585585bfa6c1a2&id=51a2045e8e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="novalidate">
               <label for="email_address" class="clearfix biggText">Sign up for our newsletter</label>
               <div class="clearfix">
                 <input id="email_address" type="email" name="EMAIL" placeholder="Your email address" class="required email">
@@ -91,13 +89,7 @@
     </div>
   </section>
   <!-- /#homeSlider -->
-<<<<<<< HEAD
-
-  <a name="reazons_why" href="#reazons_why" class="down-tab smooth_scroll">
-=======
-
-  <a name="reasons_why" href="#reasons_why" class="down-tab smooth_scroll">
->>>>>>> 2cf910881653d470109400db87a2bd762e4538ac
+  <a name="reasons_why" href="#reasons_why" class="down-tab smooth_scroll" data-distance="25">
     <span>
       <span></span>
     </span>
