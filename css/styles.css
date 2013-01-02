@@ -246,7 +246,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 #index section{background-color: #F5FBFC;}
 #slider_section{
   background-color: transparent !important;
-  box-shadow:inset 0 -130px 70px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 -130px 70px 0 rgba(0, 0, 0, 0.6) inset;
   position: relative;
 }
   #homeSlider {
@@ -258,6 +258,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: -1;
   }
 
   #slider_section .container {
@@ -362,7 +363,6 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   border-top: 1px solid #fff;
   min-height: 500px;
   position: relative;
-  z-index: 1;
 }
 #reasons_why ul {
   margin-top: 8%;
@@ -415,17 +415,16 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   .home_arrow {
     overflow: visible !important;
     position: relative;
-    z-index: 0;
   }
     .home_arrow:after {
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid #F5FBFC;
+      border-left: 21px solid transparent;
+      border-right: 21px solid transparent;
+      border-top: 21px solid #F5FBFC;
       content: "";
       left: 50%;
-      margin-left: -20px;
+      margin-left: -21px;
       position: absolute;
-      top: -2px;
+      top: -3px;
       z-index: 1;
       }
     .home_arrow:before {
