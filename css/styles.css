@@ -162,7 +162,9 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     padding:35px 0;
     font-size:.888em;
     box-shadow:0 -1px 0 #c6e4eb;
-}
+    position: relative;
+    z-index: 1;
+  }
 
     #about p{ color:#555;}
 
@@ -256,7 +258,6 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1;
   }
 
   #slider_section .container {
@@ -333,6 +334,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   .down-tab {
     display: block;
     position: relative;
+    z-index: 2;
   }
     .down-tab span {
       background-color: #40B3C9;
@@ -359,6 +361,8 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 #reasons_why {
   border-top: 1px solid #fff;
   min-height: 500px;
+  position: relative;
+  z-index: 1;
 }
 #reasons_why ul {
   margin-top: 8%;
