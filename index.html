@@ -16,13 +16,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-  var resizeMainPhoto = function(){ 
+  var resizeMainPhoto = function(){
     var height = $(window).height();
     $('#slider_section .container').css({height: "" + (height - 68) * 0.908 + "px" });
   }
-  $(function(){  
+  $(function(){
     resizeMainPhoto();
     $(window).on('resize', resizeMainPhoto);
+
     $('a.smooth_scroll').click(function(e) {
       var distance, top;
       e.preventDefault();
@@ -34,6 +35,15 @@
       return $("html, body").animate({
         "scrollTop": "" + top + "px"
       }, 450);
+    });
+
+    $("#mc-embedded-subscribe-form").submit(function(){
+      var email = $("#email_address").val()
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!re.test(email)) {
+        alert('The email is no valid. Please, enter a valid email');
+        return false;
+      }
     });
   });
 </script>
@@ -49,7 +59,7 @@
     </div>
   </header>
   <!-- /#mainHeader -->
-    
+
   <!-- #homeSlider -->
   <section id="slider_section" class="clearfix">
     <div id="homeSlider"></div>
@@ -62,7 +72,7 @@
         <aside id="mailSubscribe_box" class="fright">
           <div class="clearfix">
             <h2>Stay tuned for the relaunch</h2>
-            <form action="http://tripobox.us1.list-manage.com/subscribe/post?u=9fe8f91ed0f585585bfa6c1a2&amp;id=51a2045e8e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+            <form action="http://tripobox.us1.list-manage.com/subscribe/post?u=9fe8f91ed0f585585bfa6c1a2&id=51a2045e8e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="novalidate">
               <label for="email_address" class="clearfix biggText">Sign up for our newsletter</label>
               <div class="clearfix">
                 <input id="email_address" type="email" name="EMAIL" placeholder="Your email address" class="required email">
@@ -85,7 +95,7 @@
       <span></span>
     </span>
   </a>
-    
+
   <!-- #mainContent -->
   <section id="reasons_why">
     <div class="container clearfix">
@@ -131,7 +141,7 @@
       <footer>
         <div class="padder clearfix">
           <p class="center biggText">
-            Tripobox is a collaborative travel marketplace, simplifying the planning and reservation of group trips. 
+            Tripobox is a collaborative travel marketplace, simplifying the planning and reservation of group trips.
           </p>
           <p class="center biggerText"><strong>A full debut with major social features is being launched in January 2013!</strong></h3>
         </div>
@@ -147,7 +157,7 @@
     </aside>
   </section>
   <!-- /#mainContent -->
-    
+
   <!-- #mainFooter-->
   <footer id="mainFooter">
     <div class="container clearfix">
