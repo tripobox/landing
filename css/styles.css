@@ -520,14 +520,12 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     width: 96%;
     height: 22px;
   }
-
   .mid_btn {
     display: block;
     float: none;
     width: 100%!important;
     margin-top: 10px;
   }
-
   .threecol, .threecol-list > li,
   .fourcol, .fourcol-list > li {
     float: none;
@@ -544,10 +542,16 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   #mailSubscribe_box.fright{width: 96%;}
   #slider_section h1, #slider_section h3{font-size: 2.22em;}
   .padder{padding: 2% 5%;}
-  .home_arrow .green_btn{padding: 4px 5%; }
-  
+  .home_arrow .green_btn{padding: 4px 5%; } 
 }
 
+@media screen and (max-width: 480px) {
+  .home_arrow .green_btn.big_btn {
+    font-size: 19px;
+    margin: 4.6% auto;
+  }
+  #slider_section h1, #slider_section h3{font-size: 2.1em;}
+}
 
 
 
