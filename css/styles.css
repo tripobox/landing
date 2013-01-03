@@ -393,14 +393,12 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     height: 22px;
     padding-top: 2%;
 }
-.home_spreader_full {
-    background: url("../img/home_spreader_full.png") no-repeat scroll center bottom transparent;
-}
+.home_spreader_full {background: url(../img/home_spreader_full.png) no-repeat scroll center bottom transparent;}
 
 .home_arrow .green_btn {
   display: inline-block;
   margin: 2.6% auto;
-  padding: 4px 62px;
+  padding: 4px 52px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -518,7 +516,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   #mailSubscribe_box input[type="text"]{
     padding: 2%;
     width: 96%;
-    height: 20px;
+    height: 22px;
   }
 
   .mid_btn {
@@ -542,7 +540,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   .main_bigg_img, #slider_section hgroup.fleft,
   #mailSubscribe_box.fright{width: 96%;}
   .padder{padding: 2% 5%;}
-
+  #slider_section .container{min-height: 450px;}
   .home_arrow .green_btn{padding: 4px 5%; }
   
 }
