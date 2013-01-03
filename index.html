@@ -29,14 +29,14 @@
     $('a.smooth_scroll').click(function(e) {
       var distance, top;
       e.preventDefault();
-      top = $($(this).attr('href')).offset().top;
+      top      = $($(this).attr('href')).offset().top;
       distance = $(this).data('distance');
-      if (distance != null) {
-        top += distance;
-      }
-      return $("html, body").animate({
-        "scrollTop": "" + top + "px"
-      }, 450);
+      focus    = $(this).data('focus');
+      if (distance != null) { top += distance; }
+
+      return $("html, body").animate({"scrollTop": "" + top + "px"}, 450, function(){
+        if (focus != null) { $('#'+focus).focus() }
+      });
     });
 
     $("#mc-embedded-subscribe-form").submit(function(){
@@ -93,7 +93,7 @@
     </div>
   </section>
   <!-- /#homeSlider -->
-    
+
   <a name="reasons_why" href="#reasons_why" class="down-tab smooth_scroll" data-distance="22">
     <span>
       <span></span>
@@ -153,7 +153,7 @@
     </div>
     <aside class="grey_box home_arrow">
       <div class="container clearfix center">
-        <a href="#mailSubscribe_box" class="btn_main big_btn green_btn smooth_scroll" data-distance="-120">
+        <a href="#mailSubscribe_box" class="btn_main big_btn green_btn smooth_scroll" data-distance="-120" data-focus="email_address">
           <span>Stay tuned for the relaunch</span>
             <i class="icon big_top_arrow"></i>
         </a>
