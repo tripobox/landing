@@ -250,16 +250,17 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
   position: relative;
 }
   #homeSlider {
-    background: url("../img/group-trips-made-easy.jpg") transparent scroll border-box center -68px;
+    background: url(../img/group-trips-made-easy.jpg) transparent scroll 50% -68px;
     background-size: cover !important;
     height: 100%;
+    width: 100%;
     max-height:1700px;
     min-width: 1024px;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: -1;
   }
+    #homeSlider > img {display: none;}
 
   #slider_section .container {
     min-height: 515px;
@@ -281,15 +282,17 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
       margin-bottom: 10px;
       text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
     }
-    #slider_section hgroup h3 {font-size: 1.1em;}
+    #slider_section hgroup h3 {font-size: 1.09em;}
     #mailSubscribe_box {
-      background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+      background-color:#f0f0f0;
+      background-color:rgba(255, 255, 255, 0.5);
       border-radius: 6px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       width: 49%;
     }
       #mailSubscribe_box > .clearfix {
-        background: none repeat scroll 0 0 rgba(247, 247, 247, 0.8);
+        background-color:#f9f9f9;
+        background-color:rgba(247, 247, 247, 0.8);
         box-shadow: inset 0 1px 1px rgba(255,255,255,0.9), inset 0 0 1px rgba(255,255,255,0.8);
         margin: 8px;
         padding: 10px 15px;

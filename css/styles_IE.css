@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+Name: Tripobox styles
+Date: October 2012
+Version: 1.0
+Author: Tripobox team
+Autor URI: http://tripobox.com
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+section {min-width: 1000px;}
+#homeSlider > img {
+  display:inherit;
+  min-width: 1024px;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+
+  #slider_section:after{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 249px;
+    background: url(../img/slider_shadow.png) repeat-x bottom;
+    content: "";
+    z-index: 1;
+  }
+
+#slider_section hgroup h3{
+  font-weight: bold;
+  font-size: 1.11em;
+}
+
+.down-tab span, #reasons_why h2 span{background: url(../img/bg_circle_ie.png) no-repeat 50% 50%;}
