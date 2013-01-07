@@ -246,7 +246,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 #index section{background-color: #F5FBFC;}
 #slider_section{
   background-color: transparent !important;
-  box-shadow: 0 -130px 70px 0 rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0 -140px 72px 0 rgba(0, 0, 0, 0.6) inset;
   position: relative;
 }
   #homeSlider {
@@ -267,7 +267,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
     position: relative;
   }
     #slider_section .container > .clearfix {
-      bottom: 12.5%;
+      bottom: 14%;
       padding: 1%;
       position: absolute;
       width: 98%;
@@ -280,7 +280,7 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
       color: #FFFFFF;
       font-size: 3.08em;
       margin-bottom: 10px;
-      text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
+      text-shadow: 0 3px 4px rgba(0, 0, 0, 0.88);
     }
     #slider_section hgroup h3 {font-size: 1.09em;}
     #mailSubscribe_box {
