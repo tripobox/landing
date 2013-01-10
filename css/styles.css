@@ -546,11 +546,16 @@ h1,h2,h3,h4{line-height:1.28em; margin-bottom:.6em;}
 }
 
 @media screen and (max-width: 480px) {
+  #homeSlider{min-width: 800px; background-position: -148px -80px;}
+  #slider_section .container{min-height: 390px;}
   .home_arrow .green_btn.big_btn {
     font-size: 19px;
     margin: 4.6% auto;
   }
-  #slider_section h1, #slider_section h3{font-size: 2.1em;}
+  .biggText{font-size: .98em;}
+  #slider_section h1, #slider_section h3{font-size: 2em;}
+  #slider_section h1{margin-bottom: 1%;}
+  #mailSubscribe_box h2{font-size: 1.2em;}
 }
 
 
